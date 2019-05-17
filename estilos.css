@@ -1,0 +1,46 @@
+body{
+    font-family: "Varela Round", sans-serif  ;
+    margin-top: 10px; margin-left: 12px; margin-right: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin: 8px;
+}
+
+.elementosmon{
+    font-style: normal;
+    text-align: left;
+
+}
+
+ol{
+    list-style-type: circle;
+}
+
+
+.centro{
+    display: block;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+}
+
+.e1, .e2{
+    display: block;
+    margin: auto;
+}
+
+.l3{
+    list-style-type: decimal;
+}
+
+.video1 {
+    display: block;
+    margin: auto;
+    width: 900px;
+    height: 600px;
+}
