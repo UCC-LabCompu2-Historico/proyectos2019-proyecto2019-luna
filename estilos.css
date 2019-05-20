@@ -124,7 +124,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 
 }
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -134,13 +134,13 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
     font-size: 25px;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
     background-color: cornsilk;
     color: black;
 }
 
-/* Add a color to the active/current link */
+
 .topnav a.active {
     background-color: orangered;
     color: white;
@@ -154,4 +154,17 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 
 .ej4\.2, .ej4\.3, .ej4\.1{
     background-color: whitesmoke;
+}
+
+.soluciones{
+    color: #f2f2f2;
+}
+.soluciones a:hover{
+    color: orangered;
+}
+
+
+.soluciones a:visited{
+    color: red;
+
 }
