@@ -6,12 +6,46 @@
     <title>Expresiones algebraicas</title>
 </head>
 <body>
-<header>
 
+<div class="topnav">
+    <a href="#inicio">Inicio </a>
+    <a class="active" href="ContenidoPrincipal.html">Matematicas</a>
+    <a href="#Fisi">Física</a>
+    <a href="#Quimi">Química</a>
+    <a href="ejerciciosPag.html" target="_blank">Ejercicios</a>
+</div>
+
+<div class="calculator">
+<form name="calculator">
+    <h3 id="calcu">Calculadora</h3>
+    <p id="textcalcu">Ingrese datos</p>
+    <input type="textfield" name="ans" value="">
+    <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+    <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+    <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+    <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+    <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+    <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+    <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+    <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+    <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+    <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+    <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+    <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+    <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+    <input type="reset"  value="c">
+    <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+    <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+</form>
+</div>
+
+<header>
     <h1 id="tituloprincipal">Expresiones algebraicas</h1>
 </header>
+
+
+<h2>Monomio.</h2>
 <div>
-    <h2>Monomio.</h2>
     <p>
         Monomio es una expresión algebraica en la que se utilizan exponentes naturales de variables literales
         que constan de un solo término (si hubiera una suma o una resta sería un binomio), un número llamado
@@ -23,8 +57,8 @@
         término.
     </p>
 </div>
+<h3>Elementos de un monomio.</h3>
 <div>
-    <h3>Elementos de un monomio.</h3>
     <p>
         Dado el monomio
         4x<sup>2</sup>
@@ -35,6 +69,7 @@
         <li>Grado: 2</li>
     </ol>
 </div>
+
 <div>
     <p>
         El signo te indica si es negativo (–). Se omite si es positivo (+), y nunca puede ser cero ya que la expresión
@@ -59,35 +94,38 @@
     <img class="e2"
          src="imagenes/2.svg">
 </div>
+
+<h3>Operaciones con monomios.</h3>
+<h3>Suma y restas con monomios.</h3>
+
 <div>
-    <h3>Operaciones con monomios.</h3>
-    <h3>Suma y restas con monomios.</h3>
     <p>
         Sólo se pueden sumar o restar los monomios semejantes.
         El resultado se obtiene sumando o restando sus coeficientes:
     </p>
     <h4>Ejemplo.</h4>
-    <img src="imagenes/3.svg">
+    <img id="ej1" src="imagenes/3.svg">
     <p>
         Si los monomios no son semejantes, el resultado de la suma o resta es un polinomio.
     </p>
 
 </div>
+
+<h3>Producto de monomios.</h3>
 <div>
-    <h3>Producto de monomios.</h3>
     <p>
         Dos monomios se pueden multiplicar, efectuando el producto de los coeficientes y de las partes literales,
         respectivamente
     </p>
     <h4>Ejemplos.</h4>
     <div>
-        <img src="imagenes/4.svg">
+        <img id="ej2" src="imagenes/4.svg">
     </div>
     <div>
-        <img src="imagenes/5.svg">
+        <img id="ej3" src="imagenes/5.svg">
     </div>
     <div>
-        <img src="imagenes/6.svg">
+        <img id="ej4" src="imagenes/6.svg">
     </div>
 </div>
 
@@ -123,6 +161,7 @@
         central en teoría de números algebraicos y geometría algebraica.
     </p>
 </div>
+
 <div>
     <h3>Grado de un polinomio.</h3>
     <p>
@@ -143,6 +182,7 @@
         2b ---> grado=1.
     </p>
 </div>
+
 <div>
     <h3>Polinomios completos.</h3>
     <p>
@@ -158,6 +198,7 @@
     </p>
 
 </div>
+
 <div>
     <h3>Suma de polinomios.</h3>
     <p>
@@ -186,6 +227,7 @@
         </p>
     </ol>
 </div>
+
 <div>
     <h3>Resta de polinomios</h3>
     <p>
@@ -211,8 +253,12 @@
         Para la multiplicación y división de polinomios vamos a poner un video explicativo para hacerlo de manera más
         rápida e interactiva.
     </p>
-    <video class="video1" src="imagenes/Polinomios%20Multiplicación%20y%20División.mp4" controls allowfullscreen  ></video>
+    <video class="video1" src="imagenes/video1.mp4" controls allowfullscreen  ></video>
 </div>
+
+
+
+
 </body>
 </html>
 
