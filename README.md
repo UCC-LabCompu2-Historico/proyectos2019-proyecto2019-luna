@@ -11,3 +11,5 @@ Contenido de archivo:
 -soluciones.html: Se encuentran la solucion a los ejercicios
 
 -La carpeta imagenes contiene todas las imagenes utilizadas.
+
+-Contiene un archivo .js correspondiente a Graficadora.html.

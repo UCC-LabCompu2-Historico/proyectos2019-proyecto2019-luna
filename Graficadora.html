@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora graficadora basica.</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="javas.js"></script>
+</head>
+<body>
+
+
+
+
+<div class="topnav">
+    <a href="#inicio">Inicio </a>
+    <a href="ContenidoPrincipal.html">Matematicas</a>
+    <a href="#Fisi">Física</a>
+    <a href="#Quimi">Química</a>
+    <a href="ejerciciosPag.html" target="_blank">Ejercicios</a>
+    <a class="active"  href="Graficadora.html" target="_blank">Calculadora graficadora</a>
+</div>
+
+<div class="helpgra">¡Tener en cuenta que al graficar una función con exponente se debe primero hacer click sobre
+el número de coeficiente y luego elegir el exponente haciendo click sobre algunas de las dos opciones!
+</div>
+
+<section id="section">
+    <h1 id="gra">Graficadora</h1>
+    <div id="resultado">
+        <div>
+            <div id="grafica">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+
+    </div>
+    <div id="calculadora">
+        <div id="funcion">
+            <input type="text" id="in" disabled/>
+            <input type="text" id="res" disabled/>
+        </div>
+        <div id="botones">
+            <div class="numeros">
+                <button id="1">1</button><!--❶-->
+                <button id="2">2</button>
+                <button id="3">3</button><br>
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button><br>
+                <button id="7">7</button>
+                <button id="8">8</button>
+                <button id="9">9</button><br>
+                <button id="0">0</button>
+                <button id="CE" class="clear">CE</button>
+                <button id="DEL" class="clear">⇠</button>
+            </div>
+            <div class="variables">
+                <button id="+">+</button>
+                <button id="-">-</button>
+                <button id="*">*</button>
+                <button id="/">/</button>
+                <button id="√(">√</button><br>
+                <button id="sen(">sen</button>
+                <button id="cos(">cos</button>
+                <button id="tan(">tan</button>
+                <button id="(">(</button>
+                <button id=")">)</button><br>
+                <button id="x">x</button>
+                <button id="X²">X²</button>
+                <button id=".">.</button>
+                <button id="±" disabled>±</button>
+                <button id="igual">=</button>
+            </div>
+        </div>
+    </div>
+    <div id="reporte"></div>
+</section>
+
+<script src="javas.js"></script>
+
+</body>
+</html>
