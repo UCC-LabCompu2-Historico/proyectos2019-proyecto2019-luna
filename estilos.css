@@ -39,6 +39,7 @@ ol{
     list-style-type: decimal;
 }
 
+/* formato video */
 .video1 {
     display: block;
     margin: auto;
@@ -46,6 +47,7 @@ ol{
     height: 600px;
 }
 
+/* formato dado a algunas imagenes utilizadas a modo de ejemplo en ContenidoPrincipal.html */
 #ej1, #ej2, #ej3, #ej4{
     margin-left: 18px;
     background-color: ghostwhite;
@@ -60,11 +62,12 @@ h3{
 }
 
 h2{
-    margin-left: 20px;
+    maorgin-left: 20px;
     text-decoration: underline,
 
 }
 
+/* adaptación del video */
 .video1{
     margin-top: 50px; margin-bottom: 100px;
 }
@@ -74,7 +77,7 @@ h2{
 
 
 
-
+/* estilos de la calculadora graficadora: botones, resultados, formato y encaje. */
 
 
 
@@ -142,7 +145,6 @@ section{
     width: 800px ;
 }
 button{
-    /*border:1px solid white;*/
     border:1px;
     height: 30px;
     font-size: 15px;
@@ -237,4 +239,22 @@ button:hover{
     text-align: center;
     color: gold;
     font-size: 25px;
+}
+
+/* .index pertenece al formato dado para el index de la pagina */
+.index{
+    font-family: calibri; color: black; font-size: 18px;
+    aling-self: center;
+    background: none;
+}
+
+table tr:nth-child(odd){
+    background-color: #faf5ff;
+}
+table tr:nth-child(even){
+    background-color: aquamarine;
+}
+
+table th{
+    background-color: #b4c5ff;
 }
