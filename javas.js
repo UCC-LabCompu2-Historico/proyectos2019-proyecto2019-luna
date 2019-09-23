@@ -13,7 +13,12 @@ pixel = 1,
     scala = 1,
     translatePos = null;
 
-//FUNCION QUE DIBUJA EL PLANO
+/**
+ * FUNCION QUE DIBUJA EL PLANO
+ * @dibujarPlano 
+
+ */
+
 function dibujarPlano(){
     ctx.beginPath();
     ctx.font = "bold 15pt Verdana";
@@ -78,7 +83,7 @@ function concatenar(e){
                 /*else if(ultimo=="*" || ultimo =="/"){
                     if(valor=="+" || valor =="-")
                     *	add = true;
-                }*/
+                }
                 else if(ultimo=="+" || ultimo =="-"){
                     if(valor =="X²")
                         add = true;
@@ -267,7 +272,7 @@ function imprimirReporte(funcion ,arrayReporte){
         reporteO.innerHTML+=arrayReporte[i]+"<br>";
     reporteO.style.display="inherit"
 }
-//LIMPIA TODO
+/*LIMPIA TODO */
 function limpiarTodo(){
     reporteO.innerHTML="";
     reporteO.style.display="none";
