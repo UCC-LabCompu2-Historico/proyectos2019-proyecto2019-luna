@@ -80,9 +80,9 @@ function concatenar(e){
                     if(ultimo=="²")
                         valor = valor.replace(valor, "*"+valor);
                 }
-                /*else if(ultimo=="*" || ultimo =="/"){
+                else if(ultimo=="*" || ultimo =="/"){
                     if(valor=="+" || valor =="-")
-                    *	add = true;
+                    add = true;
                 }
                 else if(ultimo=="+" || ultimo =="-"){
                     if(valor =="X²")

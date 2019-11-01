@@ -77,15 +77,17 @@ h2{
 
 
 
-/* estilos de la calculadora graficadora: botones, resultados, formato y encaje. */
+/* estilos de la calculadora graficadora:
+    botones, resultados, formato y encaje. */
 
 
 
 .topnav {
-    background-color: transparent;
+    background-color: #2f4e6f;
     overflow: hidden;
     border-color: white;
     border-style: solid;
+    border-radius: 10px;
 
 }
 
@@ -107,7 +109,7 @@ h2{
 
 
 .topnav a.active {
-    background-color: orangered;
+    background-color: lightsteelblue;
     color: white;
 }
 
@@ -223,8 +225,8 @@ button:hover{
     background: orange;
 }
 #canvas {
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
 }
 
 
