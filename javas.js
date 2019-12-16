@@ -15,8 +15,7 @@ pixel = 1,
 
 /**
  * FUNCION QUE DIBUJA EL PLANO
- * @dibujarPlano 
-
+ * @method dibujarPlano
  */
 
 function dibujarPlano(){
@@ -45,7 +44,15 @@ function dibujarPlano(){
     ctx.closePath();
 
 }
-//FUNCION ENCARGADA DE CONCATENAR Y REACOMODAR LOS VALORES ENTRANTES
+
+/**
+ * FUNCION ENCARGADA DE CONCATENAR Y REACOMODAR LOS VALORES ENTRANTE
+ * @method contatenar
+ * @param {string}
+ * @param {boolean}
+ * @return {boolean}
+ */
+
 function concatenar(e){
     if(ok)
         limpiarTodo();
@@ -128,7 +135,14 @@ function concatenar(e){
         entrada.value = cadena;
     }
 }
-//IDENTIFICA SI LOS PARENTESIS ESTAN COMPLETOS
+
+/**
+ * Identifica si los parentesis estan completos
+ * @method {revizarparentesis}
+ * @param {string}
+ * @return {boolean}
+ */
+
 function revizarParentesis(funcion){
     n =0;
     for(i = 0 ; i<funcion.length ;i++){
@@ -141,6 +155,14 @@ function revizarParentesis(funcion){
     else
         return false;
 }
+
+/**
+ * resuelve la parte del SEN, COS y TAN
+ * @method funcionesSenCostan
+ * @param funcion
+ * @param salir {boolean}
+ * @return {*}
+ */
 //RESUELVE LA PARTE DEL SEN, COS, TAN
 function funcionesSenCosTan(funcion){
     salir = false;
@@ -180,7 +202,15 @@ function funcionesSenCosTan(funcion){
     }
     return funcion;
 }
-//RESUELVE LA PARTE DE LA RAIZ
+
+/**
+ * Resuelve la parte de la raiz
+ * @method funcionRaiz
+ * @param funcion
+ * @param salir {boolean}
+ * @return {*}
+ */
+
 function funcionRaiz(funcion){
     salir = false;
     while(!salir){
@@ -213,7 +243,13 @@ function funcionRaiz(funcion){
     }
     return funcion;
 }
-//FUNCION ENCARGADA DE ADAPTAR LA FUNCION PASADA POR PARAMETRO PARA PODERLA GRAFICAR
+
+/**
+ * funcion encargada de adaptar la funcion pasada por parametro para poder graficarla
+ * @method dibujar
+ * @param funcion
+ */
+
 function dibujar(funcion){
     limpiarCanvas();
     //REMPLAZAR VALORES
@@ -258,13 +294,27 @@ function dibujar(funcion){
     ctx.closePath();
     imprimirReporte(cadena, reporte);
 }
-//FUNCION QUE ASIGNA PARAMETROS DE ESTILO DE DIBUJO PARA LA GRAFICA
+
+
+/**
+ * Funcion que asigna parametros de estilo de dibujo para la grafica
+ * @method graficar
+ */
+
 function graficar(){
     ctx.lineWidth = 2;
     ctx.strokeStyle = '#000';
     ctx.stroke();
 }
-//IMPRIME UN REPORTE DE VARIABLES X , Y y LA FUNCION SOLO CUANDO SE GRAFICA
+
+
+/**
+ * Imprime el reporte de las variables X e Y, y la funcion solo cuando se grafica
+ * @method ImprimirReporte
+ * @param funcion
+ * @param arrayReporte
+ */
+
 function imprimirReporte(funcion ,arrayReporte){
     reporteO.innerHTML="";
     reporteO.innerHTML+="Ecuación: "+funcion+"<br>X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y<br><br>";
@@ -272,7 +322,15 @@ function imprimirReporte(funcion ,arrayReporte){
         reporteO.innerHTML+=arrayReporte[i]+"<br>";
     reporteO.style.display="inherit"
 }
-/*LIMPIA TODO */
+
+/**
+ * limpiar todo en pantalla
+ * @method LimpiarTodo
+ * @param repotteO {null}
+ * @param entrada {null}
+ * @param cadena {string}
+ * @param ok {boolean}
+ */
 function limpiarTodo(){
     reporteO.innerHTML="";
     reporteO.style.display="none";
@@ -282,12 +340,24 @@ function limpiarTodo(){
     limpiarCanvas();
     ok = false;
 }
-//LIMPIA EL CONTENIDO DEL CANVAS Y VUELVE A DIBUJAR EL PLANO
+
+/**
+ * Limpia el contenido del canvas y vuelve a dibujar el plano
+ * @method Limpiarcanvas
+ */
+
 function limpiarCanvas(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     dibujarPlano();
 }
-//FUNCION DEL BOTON IGUAL
+
+/**
+ * Funcion del boton igual
+ * @method igual
+ * @param ok {boolean}
+ * @param cadena {string}
+ */
+
 function igual(){
     if(ok)
         limpiarTodo();
@@ -306,19 +376,38 @@ function igual(){
         ok=true;
     }
 }
-//FUNCION PARA REALIZAR LAS OPERACIONES BASICAS
+
+/**
+ * Funcion para realizar las operaciones basicas
+ * @method calduladoraSimple
+ * @param funcion
+ */
 function calculadoraSimple(funcion){
     resul = eval(funcion);
     resultado.value = resul;
 }
-//FUNCION QUE DETERMINA SI SE PUEDE O NO GRAFICAR LA FUNCION QUE BIENE POR PARAMETRO
+
+/**
+ * Funcion que determina si se puede graficar o no ka funcion que viene por parametro
+ * @method sePuedegraficar
+ * @param graficarBoolean {boolean}
+ * @param cadena {string}
+ * @return {boolean}
+ */
+
 function sePuedeGraficar(){
     graficarBoolean = false;
     if(cadena!="")
         graficarBoolean = cadena.indexOf("x")>-1 || cadena.indexOf("X²")>-1 ? true: false;1
     return graficarBoolean;
 }
-//FUNCION PARA ELIMINAR EL ULTIMO CARACTER DE LA CADENA
+
+/**
+ * Funcion que permite eliminar el ultimo caracter de la cadena
+ * @method del
+ * @param ok {boolean}
+ * @param cadena {string}
+ */
 function del(){
     if(ok)
         limpiarTodo();
@@ -330,9 +419,14 @@ function del(){
 function cambiarSigno() {
 
 }
-//FUNCION DEL SCROLL DEL MOUSE
+
+/**
+ * Funcion que permite al acroll hacer zoom
+ * @method zoom
+ * @param e
+ */
 function zoom(e){
-    scaleMultiplier = 0.8;
+    scaleMultiplier = 0.6;
     if(e.wheelDelta<0){
         scala /= scaleMultiplier;
         draw(scala, translatePos);
@@ -343,7 +437,12 @@ function zoom(e){
     }
 
 }
-//FUNCION PARA HACER EL ESCALAMIENTO DEL CANVAS
+
+/**
+ * Funcion para hacer escalamiento del canvas
+ * @method draw
+ */
+
 function draw(scale, translatePos){
     if(sePuedeGraficar()){
         canvas = document.getElementById("canvas");
@@ -357,7 +456,11 @@ function draw(scale, translatePos){
         dibujar(cadena);
     }
 }
-//FUNCION PARA EVENTOS DEL MOUSE
+
+/**
+ * Funcion de carga los eventos del mouse.
+ * @method funcionesMouse
+ */
 function funcionesMouse(){
 
     var startDragOffset = {};
